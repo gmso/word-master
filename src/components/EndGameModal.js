@@ -41,7 +41,7 @@ export const EndGameModal = ({
           {gameState === state.won && (
             <>
               <img src={Success} alt="success" height="auto" width="auto" />
-              <h1 className=" text-3xl">Congrats!</h1>
+              <h1 className=" text-3xl">¡Felicidades!</h1>
               <p className="mt-6">
                 Racha actual: <strong>{currentStreak}</strong> {currentStreak > 4 && '🔥'}
               </p>
