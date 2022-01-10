@@ -43,10 +43,10 @@ export const EndGameModal = ({
               <img src={Success} alt="success" height="auto" width="auto" />
               <h1 className=" text-3xl">Congrats!</h1>
               <p className="mt-6">
-                Current streak: <strong>{currentStreak}</strong> {currentStreak > 4 && '🔥'}
+                Racha actual: <strong>{currentStreak}</strong> {currentStreak > 4 && '🔥'}
               </p>
               <p>
-                Longest streak: <strong>{longestStreak}</strong>
+                Mejor racha: <strong>{longestStreak}</strong>
               </p>
             </>
           )}
@@ -56,13 +56,13 @@ export const EndGameModal = ({
               <div className="text-primary dark:text-primary-dark text-4xl text-center">
                 <p>Oops!</p>
                 <p className="mt-3 text-2xl">
-                  The word was <strong>{answer}</strong>
+                  La palabra que buscabas era <strong>{answer}</strong>
                 </p>
                 <p className="mt-6 text-base">
-                  Current streak: <strong>{currentStreak}</strong> {currentStreak > 4 && '🔥'}
+                  Racha actual: <strong>{currentStreak}</strong> {currentStreak > 4 && '🔥'}
                 </p>
                 <p className="text-base">
-                  Longest streak: <strong>{longestStreak}</strong>
+                  Mejor racha: <strong>{longestStreak}</strong>
                 </p>
               </div>
             </>

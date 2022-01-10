@@ -15,12 +15,12 @@ export const InfoModal = ({ isOpen, handleClose, darkMode, styles }) => (
       </button>
       <div className="h-full flex flex-col items-center justify-center max-w-[390px] mx-auto pt-9 text-primary dark:text-primary-dark">
         <div className="flex-1 w-full sm:text-base text-sm">
-          <h1 className="text-center sm:text-3xl text-2xl">How to play</h1>
+          <h1 className="text-center sm:text-3xl text-2xl">Cómo jugar</h1>
           <ul className="list-disc pl-5 block sm:text-base text-sm">
-            <li className="mt-6 mb-2">You have 6 guesses to guess the correct word.</li>
-            <li className="mb-2">You can guess any valid word.</li>
+            <li className="mt-6 mb-2">Tienes 6 intentos para adivinar la palabra correcta.</li>
+            <li className="mb-2">La palabra puede ser cualquier palabra válida en castellano.</li>
             <li className="mb-2">
-              After each guess, each letter will turn green, yellow, or gray.
+              Después de cada intento, las letras adquirirán el color verde, amarillo o gris.
             </li>
           </ul>
           <div className="mb-3 mt-8 flex items-center">
@@ -28,23 +28,23 @@ export const InfoModal = ({ isOpen, handleClose, darkMode, styles }) => (
               W
             </span>
             <span className="mx-2">=</span>
-            <span>Correct letter, correct spot</span>
+            <span>Letra correcta, posición correcta</span>
           </div>
           <div className="mb-3">
             <span className="nm-inset-yellow-500 text-gray-50 inline-flex items-center justify-center text-3x w-10 h-10 rounded-full">
               W
             </span>
             <span className="mx-2">=</span>
-            <span>Correct letter, wrong spot</span>
+            <span>Letra correcta, posición incorrecta</span>
           </div>
           <span className="nm-inset-n-gray text-gray-50 inline-flex items-center justify-center text-3x w-10 h-10 rounded-full">
             W
           </span>
           <span className="mx-2">=</span>
-          <span>Wrong letter</span>
+          <span>Letra incorrecta</span>
         </div>
         <div className="flex justify-center sm:text-base text-sm">
-          <span>This project is open source on</span>
+          <span>Este projecto es de código abierto en</span>
           <a
             className="ml-[6px] rounded-full h-5 w-5 sm:h-6 sm:w-6"
             href="https://github.com/octokatherine/word-master"
@@ -52,6 +52,16 @@ export const InfoModal = ({ isOpen, handleClose, darkMode, styles }) => (
             rel="noreferrer"
           >
             <Github />
+          </a>
+        </div>
+        <div className="flex justify-center sm:text-base text-sm">
+          <span>Traducción al español por</span>
+          <a
+            className="ml-[6px] rounded-full h-5 w-5 sm:h-6 sm:w-6"
+            href="https://github.com/gmso"
+            target="_blank"
+            rel="noreferrer"
+          >gmso
           </a>
         </div>
       </div>
