@@ -1,22 +1,28 @@
-# Word Master
+# Word Master - Español
+
+🔗 https://gmso.github.io/word-master/
+
+## Aclaración
+
+Este repositorio es una traducción del repositorio original:
+
+🔗 https://github.com/octokatherine/word-master
+
+La aplicación original está alojada en el siguiente sitio web:
 
 🔗 https://octokatherine.github.io/word-master/
 
-Heavily inspired by [Wordle](https://www.powerlanguage.co.uk/wordle/), Word Master is a word guessing game similar to Mastermind. I created this because I love Wordle, but the once a day limit leaves me wanting more.
+# Traducción del README original:
 
-## Rules
+Fuertemente insipirado por [Wordle](https://www.powerlanguage.co.uk/wordle/), Word Master es un juego de adivinar palabras, similar al ahorcado. Esta aplicación fue creada por amor al Wordle original, pero sin la limitación de jugar solo una vez al día.
 
-You have 6 guesses to guess the correct word.
-Each guess can be any valid word.
+## Reglas
 
-After submitting a guess, the letters will turn gray, green, or yellow.
+Tienes 6 intentos para intentar adivinar la palabra correcta.
+Cada intento puede ser cualquier palabra válida.
 
-- Green: The letter is correct, in the correct position.
-- Yellow: The letter is correct, but in the wrong position.
-- Gray: The letter is incorrect.
+Después de introducir una palabra válida, las letras adquirirán el color gris, verde o amarillo.
 
-## Contributing
-
-Feel free to open an issue for any bugs or feature requests.
-
-To contribute to the code, see [CONTRIBUTING.md](https://github.com/octokatherine/word-master/blob/main/CONTRIBUTING.md)
+- Verde: La letra es correcta y está en la posición correcta.
+- Amarillo: La letra es correcta pero está en la posición incorrecta.
+- Gris: La letra es incorrecta.
