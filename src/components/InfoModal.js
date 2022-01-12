@@ -44,7 +44,7 @@ export const InfoModal = ({ isOpen, handleClose, darkMode, styles }) => (
           <span>Letra incorrecta</span>
         </div>
         <div className="flex justify-center sm:text-base text-sm">
-          <span>Este projecto es de código abierto y está alojado en</span>
+          <span>Este projecto está alojado en</span>
           <a
             className="ml-[6px] rounded-full h-5 w-5 sm:h-6 sm:w-6"
             href="https://github.com/octokatherine/word-master"
