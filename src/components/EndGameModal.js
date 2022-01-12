@@ -14,6 +14,7 @@ export const EndGameModal = ({
   currentStreak,
   longestStreak,
   answer,
+  definition,
   playAgain,
 }) => {
   const PlayAgainButton = () => {
@@ -27,6 +28,15 @@ export const EndGameModal = ({
           Jugar otra vez
         </button>
       </div>
+    )
+  }
+  const DefinitionsList = () => {
+    return (
+      <ol className='py3 text-left text-base text-slate-600 list-decimal'>
+        {
+          definition.map(d => <li className='py2'><em>{d}</em></li>)
+        }
+      </ol>
     )
   }
   return (
@@ -58,6 +68,7 @@ export const EndGameModal = ({
                 <p className="mt-3 text-2xl">
                   La palabra que buscabas era <strong>{answer}</strong>
                 </p>
+                <DefinitionsList />
                 <p className="mt-6 text-base">
                   Racha actual: <strong>{currentStreak}</strong> {currentStreak > 4 && '🔥'}
                 </p>

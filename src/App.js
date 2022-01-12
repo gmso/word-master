@@ -3,6 +3,7 @@ import { letters, status } from './constants'
 import { Keyboard } from './components/Keyboard'
 import answers from './data/answers'
 import words from './data/words'
+import definitions from './data/definitions'
 
 import { useLocalStorage } from './hooks/useLocalStorage'
 import { ReactComponent as Info } from './data/Info.svg'
@@ -22,6 +23,7 @@ const getRandomAnswer = () => {
   const randomIndex = Math.floor(Math.random() * answers.length)
   return answers[randomIndex].toUpperCase()
 }
+
 
 function App() {
   const initialStates = {
@@ -68,6 +70,11 @@ function App() {
     setFirstTime(false)
     setInfoModalIsOpen(false)
   }
+
+  const getDefinition = (ans) => {
+    return definitions[ans.toLowerCase()]
+  }
+  
 
   const [darkMode, setDarkMode] = useLocalStorage('dark-mode', false)
   const toggleDarkMode = () => setDarkMode((prev) => !prev)
@@ -250,7 +257,7 @@ function App() {
       right: 'auto',
       bottom: 'auto',
       transform: 'translate(-50%, -50%)',
-      height: 'calc(100% - 2rem)',
+      // height: 'calc(100% - 2rem)',
       width: 'calc(100% - 2rem)',
       backgroundColor: darkMode ? 'hsl(231, 16%, 25%)' : 'hsl(231, 16%, 92%)',
       boxShadow: `${
@@ -261,7 +268,7 @@ function App() {
       border: 'none',
       borderRadius: '1rem',
       maxWidth: '475px',
-      maxHeight: '650px',
+      // maxHeight: '650px',
       position: 'relative',
     },
   }
@@ -322,6 +329,7 @@ function App() {
           currentStreak={currentStreak}
           longestStreak={longestStreak}
           answer={answer}
+          definition={getDefinition(answer)}
           playAgain={() => {
             setAnswer(initialStates.answer)
             setGameState(initialStates.gameState)
