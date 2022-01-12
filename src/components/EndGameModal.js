@@ -32,9 +32,9 @@ export const EndGameModal = ({
   }
   const DefinitionsList = () => {
     return (
-      <ol className='py3 text-left text-base text-slate-600 list-decimal'>
+      <ol className='text-left text-base text-slate-600 list-decimal'>
         {
-          definition.map(d => <li className='py2'><em>{d}</em></li>)
+          definition.map(d => <li style={{margin:"1rem 0"}}><em>{d}</em></li>)
         }
       </ol>
     )
@@ -50,8 +50,12 @@ export const EndGameModal = ({
         <div className="h-full flex flex-col items-center justify-center max-w-[300px] mx-auto text-primary dark:text-primary-dark">
           {gameState === state.won && (
             <>
-              <img src={Success} alt="success" height="auto" width="auto" />
+              <img src={Success} alt="success" height="auto" width="50%" />
               <h1 className=" text-3xl">¡Felicidades!</h1>
+              <p className="mt-3 text-2xl text-center">
+                  Has encontrado la palabra <strong>{answer}</strong>
+              </p>
+              <DefinitionsList />
               <p className="mt-6">
                 Racha actual: <strong>{currentStreak}</strong> {currentStreak > 4 && '🔥'}
               </p>
@@ -62,9 +66,9 @@ export const EndGameModal = ({
           )}
           {gameState === state.lost && (
             <>
-              <img src={Fail} alt="success" height="auto" width="80%" />
+              <img src={Fail} alt="success" height="auto" width="50%" />
               <div className="text-primary dark:text-primary-dark text-4xl text-center">
-                <p>Oops!</p>
+                <p>Ups!</p>
                 <p className="mt-3 text-2xl">
                   La palabra que buscabas era <strong>{answer}</strong>
                 </p>

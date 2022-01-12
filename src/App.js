@@ -65,7 +65,17 @@ function App() {
   const [settingsModalIsOpen, setSettingsModalIsOpen] = useState(false)
 
   const openModal = () => setIsOpen(true)
-  const closeModal = () => setIsOpen(false)
+  const closeModal = () => {
+    setAnswer(initialStates.answer)
+    setGameState(initialStates.gameState)
+    setBoard(initialStates.board)
+    setCellStatuses(initialStates.cellStatuses)
+    setCurrentRow(initialStates.currentRow)
+    setCurrentCol(initialStates.currentCol)
+    setLetterStatuses(initialStates.letterStatuses)
+    setIsOpen(false)
+    streakUpdated.current = false
+  }
   const handleInfoClose = () => {
     setFirstTime(false)
     setInfoModalIsOpen(false)
