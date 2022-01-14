@@ -37,11 +37,13 @@ export const InfoModal = ({ isOpen, handleClose, darkMode, styles }) => (
             <span className="mx-2">=</span>
             <span>Letra correcta, posición incorrecta</span>
           </div>
-          <span className="nm-inset-n-gray text-gray-50 inline-flex items-center justify-center text-3x w-10 h-10 rounded-full">
-            W
-          </span>
-          <span className="mx-2">=</span>
-          <span>Letra incorrecta</span>
+          <div className="mb-3">
+            <span className="nm-inset-n-gray text-gray-50 inline-flex items-center justify-center text-3x w-10 h-10 rounded-full">
+              W
+            </span>
+            <span className="mx-2">=</span>
+            <span>Letra incorrecta</span>
+          </div>
         </div>
         <div className="flex justify-center sm:text-base text-sm">
           <span>Este projecto está alojado en</span>

@@ -32,7 +32,7 @@ export const EndGameModal = ({
   }
   const DefinitionsList = () => {
     return (
-      <ol className='text-left text-base list-decimal'>
+      <ol className='text-left text-base list-decimal ml-4'>
         {
           definition.map(d => <li className={darkMode ? 'text-slate-400' : 'text-slate-600'} style={{margin:"1rem 0"}}><em>{d}</em></li>)
         }
