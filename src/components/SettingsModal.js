@@ -25,13 +25,13 @@ export const SettingsModal = ({ isOpen, handleClose, styles, darkMode, toggleDar
               <Close />
             </button>
 
-            <Switch.Group as="div" className="flex items-center">
+            <Switch.Group as="div" className="flex items-center mb-4">
               <Switch
                 checked={darkMode}
                 onChange={toggleDarkMode}
                 className={`${
                   darkMode
-                    ? 'nm-inset-yellow-500 border-background-dark'
+                    ? 'nm-inset-yellow-600 border-background-dark'
                     : 'nm-inset-background border-transparent'
                 } relative inline-flex flex-shrink-0 h-8 w-14 p-1 border-2 rounded-full cursor-pointer transition ease-in-out duration-200`}
               >
@@ -91,7 +91,7 @@ export const SettingsModal = ({ isOpen, handleClose, styles, darkMode, toggleDar
               className="nm-flat-background dark:nm-flat-background-dark rounded-xl hover:nm-inset-background dark:hover:nm-inset-background-dark"
             >
               <img
-                className="h-12"
+                className="h-10"
                 alt="buy me a coffee"
                 src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=katherinecodes&button_colour=eab308&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff"
               />

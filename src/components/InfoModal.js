@@ -14,56 +14,65 @@ export const InfoModal = ({ isOpen, handleClose, darkMode, styles }) => (
         <Close />
       </button>
       <div className="h-full flex flex-col items-center justify-center max-w-[390px] mx-auto pt-9 text-primary dark:text-primary-dark">
-        <div className="flex-1 w-full sm:text-base text-sm">
+        <div className="flex-1 w-full sm:text-base text-sm mb-4">
           <h1 className="text-center sm:text-3xl text-2xl">Cómo jugar</h1>
           <ul className="list-disc pl-5 block sm:text-base text-sm">
             <li className="mt-6 mb-2">Tienes 6 intentos para adivinar la palabra correcta.</li>
             <li className="mb-2">La palabra puede ser cualquier palabra válida en castellano.</li>
             <li className="mb-2">
-              Después de cada intento, las letras adquirirán el color verde, amarillo o gris.
+              Después de cada intento con una palabra válida, las letras adquirirán el color verde, amarillo o gris.
             </li>
           </ul>
           <div className="mb-3 mt-8 flex items-center">
-            <span className="nm-inset-n-green text-gray-50 inline-flex items-center justify-center text-3x w-10 h-10 rounded-full">
-              W
+            <span className="nm-inset-n-green text-gray-50 font-bold text-2xl inline-flex items-center justify-center text-3x w-10 h-10 rounded-full">
+              A
             </span>
             <span className="mx-2">=</span>
             <span>Letra correcta, posición correcta</span>
           </div>
           <div className="mb-3">
-            <span className="nm-inset-yellow-500 text-gray-50 inline-flex items-center justify-center text-3x w-10 h-10 rounded-full">
-              W
+            <span className="nm-inset-yellow-600 text-gray-50 font-bold text-2xl inline-flex items-center justify-center text-3x w-10 h-10 rounded-full">
+              A
             </span>
             <span className="mx-2">=</span>
             <span>Letra correcta, posición incorrecta</span>
           </div>
           <div className="mb-3">
-            <span className="nm-inset-n-gray text-gray-50 inline-flex items-center justify-center text-3x w-10 h-10 rounded-full">
-              W
+            <span className="nm-inset-n-gray text-gray-50 font-bold text-2xl inline-flex items-center justify-center text-3x w-10 h-10 rounded-full">
+              A
             </span>
             <span className="mx-2">=</span>
             <span>Letra incorrecta</span>
           </div>
         </div>
-        <div className="flex justify-center sm:text-base text-sm">
-          <span>Este projecto está alojado en</span>
+        <div className='mb-4'>
           <a
-            className="ml-[6px] rounded-full h-5 w-5 sm:h-6 sm:w-6"
+            className="flex justify-center sm:text-base text-sm underline"
             href="https://github.com/octokatherine/word-master"
             target="_blank"
             rel="noreferrer"
           >
-            <Github />
+            <span>Proyecto original en</span>
+            <span
+              className="ml-[6px] rounded-full h-5 w-5 sm:h-6 sm:w-6"
+            >
+              <Github/>
+            </span>
           </a>
         </div>
-        <div className="flex justify-center sm:text-base text-sm">
-          <span>Traducción al español por</span>
+        <div className='mb-4'>
           <a
-            className="ml-[6px] rounded-full h-5 w-5 sm:h-6 sm:w-6"
-            href="https://github.com/gmso"
+            className="flex justify-center sm:text-base text-sm underline"
+            href="https://github.com/gmso/word-master"
             target="_blank"
             rel="noreferrer"
-          >gmso
+          >
+            <span>Proyecto de traducción en</span>
+            <span
+              className="ml-[6px] rounded-full h-5 w-5 sm:h-6 sm:w-6"
+            >
+              <Github/>
+            </span>
           </a>
         </div>
       </div>

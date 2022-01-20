@@ -15,7 +15,7 @@ module.exports = {
         primary: 'hsl(231, 16%, 25%)',
         'background-dark': 'hsl(231, 16%, 25%)',
         'primary-dark': 'hsl(231, 16%, 92%)',
-        'n-green': 'hsl(110, 33%, 50%)',
+        'n-green': 'hsl(110, 43%, 34%)',
         'n-gray': 'hsl(231, 16%, 45%)',
       },
     },

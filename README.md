@@ -4,7 +4,7 @@
 
 ## Aclaración
 
-Este repositorio es una traducción del repositorio original:
+Este repositorio es una traducción y sucesiva extensión del repositorio original:
 
 🔗 https://github.com/octokatherine/word-master
 
@@ -23,6 +23,6 @@ Cada intento puede ser cualquier palabra válida.
 
 Después de introducir una palabra válida, las letras adquirirán el color gris, verde o amarillo.
 
-- Verde: La letra es correcta y está en la posición correcta.
-- Amarillo: La letra es correcta pero está en la posición incorrecta.
-- Gris: La letra es incorrecta.
+- **Verde**: La letra es correcta y está en la posición correcta.
+- **Amarillo**: La letra es correcta pero está en la posición incorrecta.
+- **Gris**: La letra es incorrecta.

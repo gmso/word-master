@@ -116,7 +116,7 @@ function App() {
     if (rowNumber === currentRow) {
       if (letter) {
         return `nm-inset-background dark:nm-inset-background-dark text-primary dark:text-primary-dark ${
-          submittedInvalidWord ? 'border border-red-800' : ''
+          submittedInvalidWord ? 'border-4 border-red-800' : ''
         }`
       }
       return 'nm-flat-background dark:nm-flat-background-dark text-primary dark:text-primary-dark'
@@ -126,7 +126,7 @@ function App() {
       case status.green:
         return 'nm-inset-n-green text-gray-50'
       case status.yellow:
-        return 'nm-inset-yellow-500 text-gray-50'
+        return 'nm-inset-yellow-600 text-gray-50'
       case status.gray:
         return 'nm-inset-n-gray text-gray-50'
       default:
@@ -315,7 +315,7 @@ function App() {
                     rowNumber,
                     colNumber,
                     letter
-                  )} inline-flex items-center font-medium justify-center text-lg w-[14vw] h-[14vw] xs:w-14 xs:h-14 sm:w-20 sm:h-20 rounded-full`}
+                  )} transition-colors duration-300 inline-flex items-center font-bold justify-center text-2xl w-[14vw] h-[14vw] xs:w-14 xs:h-14 sm:w-20 sm:h-20 rounded-full`}
                 >
                   {letter}
                 </span>

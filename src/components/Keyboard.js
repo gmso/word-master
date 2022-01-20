@@ -7,7 +7,7 @@ const Keyboard = ({ letterStatuses, addLetter, onEnterPress, onDeletePress, game
       case status.green:
         return 'bg-n-green text-gray-50'
       case status.yellow:
-        return 'bg-yellow-500 text-gray-50'
+        return 'bg-yellow-600 text-gray-50'
       case status.gray:
         return 'bg-n-gray text-gray-50'
       default:
@@ -55,16 +55,22 @@ const Keyboard = ({ letterStatuses, addLetter, onEnterPress, onDeletePress, game
           {idx === 2 && (
             <button
               onClick={onEnterPress}
-              className="h-10 xxs:h-14 w-12 px-1 text-xs font-medium mx-[3.5px] rounded nm-flat-background-sm dark:nm-flat-background-dark-sm text-primary dark:text-primary-dark"
+              className="pl-3 h-10 xxs:h-14 w-12 px-1 text-xs font-medium mx-[3.5px] rounded nm-flat-background-sm dark:nm-flat-background-dark-sm text-primary dark:text-primary-dark"
             >
-              ENTRAR
+              <svg 
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6"
+                viewBox="0 0 24 24"
+                fill="currentColor">
+                <path d="M8 21c-.512 0-1.024-.195-1.414-.586l-6-6c-.78-.78-.78-2.047 0-2.828.78-.78 2.047-.78 2.828 0L8 16.172 20.586 3.586c.78-.78 2.047-.78 2.828 0 .78.78.78 2.047 0 2.828l-14 14c-.39.39-.902.586-1.414.586z" fill-rule="evenodd"/>
+              </svg>
             </button>
           )}
           {row.map((letter) => (
             <button
               onClick={() => onKeyButtonPress(letter)}
               key={letter}
-              className="h-10 xxs:h-14 w-[2rem] sm:w-10 mx-[3.5px] text-sm font-medium rounded-[4px] nm-flat-background-sm dark:nm-flat-background-dark-sm"
+              className="h-10 xxs:h-14 w-[2rem] sm:w-10 mx-[3.5px] text-m font-bold rounded-[4px] nm-flat-background-sm dark:nm-flat-background-dark-sm"
             >
               <div
                 className={`h-full w-full rounded-[3px] flex items-center justify-center ${getKeyStyle(
@@ -82,7 +88,7 @@ const Keyboard = ({ letterStatuses, addLetter, onEnterPress, onDeletePress, game
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
+                className="h-7"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
